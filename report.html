@@ -98,7 +98,7 @@
 	document.addEventListener("DOMContentLoaded", () => {
 		let params = new URLSearchParams(window.location.search);
 		let date = params.get("date");
-		let report_url = "https://antiimperialismreading.club/reports/" + date + ".txt"
+		let report_url = "/reports/" + date + ".txt"
 		fetch(report_url)
 			.then((res) => {
 				if (res.status != 200) {
