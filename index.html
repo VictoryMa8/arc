@@ -15,6 +15,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
 	<script>
 		// Has they chosen an option for the pop-up?
 		const popup = localStorage.getItem('popup');
@@ -120,22 +121,21 @@
 						empower action, and create
 						change.
 					</p>
-					<p class="p-2 text-2xl bold text-white">
-						Meetings typically* every Saturday, 1-2 PM at <a
+					<p class="p-2 text-2xl text-white">
+						Meetings typically every Saturday, 1:00-2:00 PM at <a
 							class="underline text-red-700 hover:text-red-400"
 							href="https://www.ravensnest.cafe/">Raven's Nest
 							Cafe</a>
 					</p>
+					<div class="flex flex-row justify-center gap-4 mt-4 bg-white w-45 h-45 rounded-full self-center">
+						<img class="w-40 self-center my-8 rounded-full" src="static/assets/images/arc.png">
+					</div>
 					<p class="p-2 text-2xl text-white">
-						*Fill out <a
+						Fill out <a
 							href="https://docs.google.com/forms/d/e/1FAIpQLScZxzuFEUu0e-afeiwRmeNFVy_cXkl6H9gV_vXvDOhu46sG4g/viewform?usp=preview"
 							target="_blank" class="underline text-red-700 hover:text-red-400">this
 							form</a> to join our Signal and get updates
 					</p>
-					<p class="p-2 text-xl bold text-white">422 Division St S, Northfield, MN 55057</p>
-					<div class="flex flex-row justify-center gap-4 mt-4 bg-white w-45 h-45 rounded-full self-center">
-						<img class="w-40 self-center my-8 rounded-full" src="static/assets/images/arc.png">
-					</div>
 				</div>
 			</div>
 		</div>
@@ -143,47 +143,56 @@
 		<!-- MEETINGS & UPDATES -->
 		<div class="bg-red-800">
 			<h1 class="text-4xl text-center pt-8 font-bold text-white">Meetings & Updates</h1>
-			<div class="flex flex-col md:flex-row justify-center items-center p-8 gap-4">
+			<div class="flex flex-col md:flex-row justify-center items-stretch p-8 gap-4">
 				<div class="card bg-white min-h-40 w-82 md:w-96 shadow-sm">
-					<div class="card-body">
-						<h2 class="card-title text-2xl text-black">ARC on Instagram</h2>
-						<div class="card-actions justify-end">
+					<div class="card-body grow">
+						<div class="h-24 flex items-center">
+							<i class="mdi mdi-instagram text-8xl text-red-800 leading-none" aria-hidden="true"></i>
+						</div>
+						<h2 class="card-title text-2xl text-black min-h-16 items-start">ARC on Instagram</h2>
+						<div class="card-actions justify-end mt-auto">
 							<a href="https://www.instagram.com/aircnorthfield/" target="_blank"
 								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Follow</a>
 						</div>
 					</div>
 				</div>
 				<div class="card bg-white min-h-40 w-82 md:w-96 shadow-sm">
-					<div class="card-body">
-						<h2 class="card-title text-2xl text-black">Join Palestine in Northfield</h2>
-						<div class="card-actions justify-end">
-							<a href="http://palestineinnorthfield.org" target="_blank"
-								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Join</a>
+					<div class="card-body grow">
+						<div class="h-24 flex items-center">
+							<i class="mdi mdi-book-open-page-variant text-8xl text-red-800 leading-none"
+								aria-hidden="true"></i>
+						</div>
+						<h2 class="card-title text-2xl text-black min-h-16 items-start">Read for this week</h2>
+						<div class="card-actions justify-end mt-auto">
+							<a href="./study_portal.html" target="_blank"
+								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Read</a>
 						</div>
 					</div>
 				</div>
 				<div class="card bg-white min-h-40 w-82 md:w-96 shadow-sm">
-					<div class="card-body">
-						<h2 class="card-title text-2xl text-black">Watch our AI Symposium</h2>
-						<div class="card-actions justify-end">
+					<div class="card-body grow">
+						<div class="h-24 flex items-center">
+							<i class="mdi mdi-youtube text-8xl text-red-800 leading-none" aria-hidden="true"></i>
+						</div>
+						<h2 class="card-title text-2xl text-black min-h-16 items-start">Watch our AI Symposium</h2>
+						<div class="card-actions justify-end mt-auto">
 							<a href="https://www.youtube.com/watch?v=EcqzkRhUxUE" target="_blank"
-								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Recording</a>
+								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Watch</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- WHAT HAVE WE BEEN WORKING ON? -->
-		<h1 class="text-center text-4xl mt-8 font-bold text-white p-4">What have we been working on?</h1>
-		<div class="flex flex-col md:flex-row justify-center items-center bg-black p-8 gap-4">
-			<div class="card bg-white w-82 md:w-96 shadow-sm">
+		<!-- Past readings/projects -->
+		<h1 class="text-center text-4xl mt-8 font-bold text-white p-4">Previous Projects/Readings</h1>
+		<div class="flex flex-col md:flex-row flex-wrap justify-center items-center bg-black p-8 gap-4">
+			<div class="card bg-white w-80 shadow-sm">
 				<figure>
-					<img class="h-80 md:h-100 mt-8" src="static/assets/images/bsr.jpg"
+					<img class="h-70 md:h-90 mt-8" src="static/assets/images/bsr.jpg"
 						alt="Cover of Blackshirts & Reds" />
 				</figure>
 				<div class="card-body">
-					<h2 class="card-title text-2xl text-black">April & May 2025</h2>
 					<div class="card-actions justify-end">
 						<a target="_blank"
 							href="https://welshundergroundnetwork.com/wp-content/uploads/2020/04/blackshirts-and-reds-by-michael-parenti.pdf"
@@ -191,12 +200,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="card bg-white w-82 md:w-96 shadow-sm">
+			<div class="card bg-white w-80 shadow-sm">
 				<figure>
-					<img class="h-80 md:h-100 mt-8" src="static/assets/images/kh.jpg" alt="Shoes" />
+					<img class="h-70 md:h-90 mt-8" src="static/assets/images/kh.jpg" alt="Cover of Killing Hope" />
 				</figure>
 				<div class="card-body">
-					<h2 class="card-title text-2xl text-black">June & July 2025</h2>
 					<div class="card-actions justify-end">
 						<a target="_blank"
 							href="https://ia801802.us.archive.org/4/items/william-blum-killing-hope-us-military-and-cia-interventions-since-world-war-ii-2/William%20Blum%20-%20Killing%20Hope_%20US%20Military%20and%20CIA%20Interventions%20Since%20World%20War%20II%20%282003%2C%20Zed%20Books%20Ltd%29%20-%20libgen.li.pdf"
@@ -204,27 +212,28 @@
 					</div>
 				</div>
 			</div>
-			<div class="card bg-white w-82 md:w-96 shadow-sm">
+			<div class="card bg-white w-80 shadow-sm">
 				<figure>
-					<img class="h-60 md:h-80 mt-18 mb-10" src="static/assets/images/bb.jpeg" alt="Shoes" />
+					<img class="h-70 md:h-90 mt-8" src="static/assets/images/bswm.jpg"
+						alt="Cover of Black Skin, White Masks" />
 				</figure>
 				<div class="card-body">
-					<h2 class="card-title text-2xl text-black">June & July 2025</h2>
 					<div class="card-actions justify-end">
-						<a target="_blank" href="https://open.spotify.com/show/2pibBnPuHqKr07hxEMZE41"
-							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Listen</a>
+						<a target="_blank"
+							href="https://scalar.usc.edu/works/bodies/media/The%20Fact%20of%20Blackness%20.pdf"
+							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Read</a>
 					</div>
 				</div>
 			</div>
-			<div class="card bg-white w-82 md:w-96 shadow-sm">
+			<div class="card bg-white w-80 shadow-sm">
 				<figure>
-					<img class="h-60 md:h-80 mt-18 mb-10" src="static/assets/images/gaza.png" alt="Shoes" />
+					<img class="h-70 md:h-90 mt-8" src="static/assets/images/principles.jpg"
+						alt="Cover of The Principles of Communism" />
 				</figure>
 				<div class="card-body">
-					<h2 class="card-title text-2xl text-black">August 2025</h2>
 					<div class="card-actions justify-end">
-						<a href="reports.html"
-							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View Reports</a>
+						<a target="_blank" href="https://www.marxists.org/archive/marx/works/1847/11/prin-com.htm"
+							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Read</a>
 					</div>
 				</div>
 			</div>

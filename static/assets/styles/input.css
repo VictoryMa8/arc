@@ -1,2 +1,18 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+a.resource-card {
+    transition:
+        translate 300ms cubic-bezier(0, 0, 0.2, 1),
+        scale 300ms cubic-bezier(0, 0, 0.2, 1),
+        box-shadow 300ms cubic-bezier(0, 0, 0.2, 1),
+        outline 200ms ease-in-out !important;
+}
+
+a.resource-card:hover,
+a.resource-card:focus-visible {
+    translate: 0 -0.5rem;
+    scale: 1.03;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.35);
+    z-index: 10;
+}
